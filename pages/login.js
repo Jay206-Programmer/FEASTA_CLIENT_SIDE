@@ -57,7 +57,7 @@ export default function Login() {
                 <title>{'Login'}</title>
             </Head>
         
-            <div style={{backgroundImage:"linear-gradient(180deg, #d65106, #ef7e1d,#d65106)"}}>
+            <div style={{height:"100vh",backgroundImage:"linear-gradient(180deg, #d65106, #ef7e1d,#d65106)"}}>
                 <div className="container h-auto">
                     {/* Outer Row */}
                     <div className="row justify-content-center">
