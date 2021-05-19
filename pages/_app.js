@@ -18,11 +18,11 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     
     //? Getting Login Status
-    var locallog = localStorage.getItem("login")?JSON.parse(localStorage.getItem("login")):{login:false};
+    var locallog = localStorage.getItem("user_login")?JSON.parse(localStorage.getItem("user_login")):{login:false};
     
     if(locallog.login){
       //? Login Done
-      var excludeRouts = ['/','/login','/register']
+      var excludeRouts = ['/login','/register']
       if (excludeRouts.indexOf(router.pathname) === -1){
         router.push(router.pathname)
       }

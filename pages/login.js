@@ -30,7 +30,7 @@ export default function Login() {
                 var user_id = JSON.stringify({user_id:result.data.user_id})
                 var user_name = JSON.stringify({user_name: result.data.user_name})
                 
-                localStorage.setItem("login",login);
+                localStorage.setItem("user_login",login);
                 localStorage.setItem("user_id",user_id);
                 localStorage.setItem("user_name",user_name);
 

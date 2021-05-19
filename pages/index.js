@@ -3,8 +3,23 @@ import Layout from '../component/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 
+import { useState,useEffect } from 'react'
+
 export default function Home() {
+
+  // ? Defining Variables
+  const [user, setuser] = useState("")
+    
+  // ? Setting Up Variables
+  useEffect(() => {
+      setuser(localStorage.getItem("user_name")?JSON.parse(localStorage.getItem("user_name")).user_name:"")
+  }, [])
+  
   return (
+        <>
+        <Head>
+          <title>FEASTA</title>
+        </Head>
         <Layout>
             
             <div className="about-section-box">
@@ -12,7 +27,7 @@ export default function Home() {
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12 text-center shadow-lg mb-5 pt-3 pl-4 pr-4">
                     <div className="inner-column mb-0 mt-3 text-center">
-                      <h1 className="d-flex justify-content-center pb-3">Welcome To <span className="ml-2">FEASTA</span></h1>
+                      <h1 className="d-flex justify-content-center pb-3">Welcome To <span className="ml-2">FEASTA, {user}</span></h1>
                       <hr style={{color:"var(--feasta-sec)"}}/>
                       <h4 className="d-flex justify-content-center">Little Story</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
@@ -158,5 +173,6 @@ export default function Home() {
             </div>
 
         </Layout>
+        </>
   )
 }
