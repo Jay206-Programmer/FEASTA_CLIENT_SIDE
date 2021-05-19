@@ -27,7 +27,7 @@ export default function Home() {
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12 text-center shadow-lg mb-5 pt-3 pl-4 pr-4">
                     <div className="inner-column mb-0 mt-3 text-center">
-                      <h1 className="d-flex justify-content-center pb-3">Welcome To <span className="ml-2">FEASTA, {user}</span></h1>
+                      <h1 className="">Welcome To <span className="">FEASTA, {user}</span></h1>
                       <hr style={{color:"var(--feasta-sec)"}}/>
                       <h4 className="d-flex justify-content-center">Little Story</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
@@ -58,16 +58,17 @@ export default function Home() {
             </div>
 
             <hr/>
-            <div className="gallery-box pb-1">
-              <div className="container">
+            <div className="pt-4 gallery-box pb-1">
+              <div className="container shadow mb-4 pt-4 pb-2">
                 <div className="row">
                   <div className="col-lg-12">
-                    <div className="heading-title text-center">
+                    <div className="mb-2 heading-title text-center">
                       <h2>Gallery</h2>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                     </div>
                   </div>
                 </div>
+                <hr/>
                 <div className="tz-gallery">
                   <div className="row">
                     <div className="col-sm-12 col-md-4 col-lg-4">
@@ -158,13 +159,13 @@ export default function Home() {
                           <p className="m-0 pt-3 card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
                         </div>
                       </div>
-                      <a className="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
+                      <a className="carousel-control-prev" href="#reviews" role="button" data-slide="prev" style={{backgroundColor:"white",color:"var(--feasta)",opacity:"30%"}}>
                         <i className="fa fa-angle-left" aria-hidden="true" />
-                        <span className="sr-only">Previous</span>
+                        {/* <span className="sr-only">Previous</span> */}
                       </a>
-                      <a className="carousel-control-next" href="#reviews" role="button" data-slide="next">
+                      <a className="carousel-control-next" href="#reviews" role="button" data-slide="next" style={{backgroundColor:"white",color:"var(--feasta)",opacity:"30%"}}>
                         <i className="fa fa-angle-right" aria-hidden="true" />
-                        <span className="sr-only">Next</span>
+                        {/* <span className="sr-only">Next</span> */}
                       </a>
                     </div>
                   </div>
