@@ -58,17 +58,16 @@ export default function Home() {
             </div>
 
             <hr/>
-            <div className="pt-4 gallery-box pb-1">
-              <div className="container shadow mb-4 pt-4 pb-2">
+            <div className="pt-5 gallery-box pb-1">
+              <div className=" container">
                 <div className="row">
                   <div className="col-lg-12">
-                    <div className="mb-2 heading-title text-center">
+                    <div className="heading-title text-center">
                       <h2>Gallery</h2>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                     </div>
                   </div>
                 </div>
-                <hr/>
                 <div className="tz-gallery">
                   <div className="row">
                     <div className="col-sm-12 col-md-4 col-lg-4">
