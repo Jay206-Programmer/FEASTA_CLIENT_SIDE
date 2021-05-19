@@ -44,7 +44,7 @@ export default function Home() {
             {/* End About */}
             <hr/>
             {/* Start QT */}
-            <div className="qt-box qt-background mb-5">
+            <div className="mt-5 qt-box qt-background mb-5 shadow-lg">
               <div>
                 <div className="row">
                   <div className="col-md-8 ml-auto mr-auto text-center">

@@ -50,6 +50,7 @@ export default function Layout({ children }) {
                     </div>
                 </li>
                 <li className="nav-item"><a className="nav-link" onClick={handleLogout}>Log Out</a></li>
+                <li className="nav-item"><Link href="/"><a className="nav-link"><i className="fa fa-fw fa-cart-arrow-down" style={{color:"var(--feastasec)"}}></i></a></Link></li>
                 </ul>
             </div>
             </div>
