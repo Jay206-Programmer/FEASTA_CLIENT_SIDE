@@ -30,27 +30,24 @@ export default function Layout({ children }) {
     <header className="top-navbar">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
-            <a className="navbar-brand" href="index.html">
+            <Link href="/">
+            <a className="navbar-brand">
                 <img src="images/logo.png" alt="" width="50%" height="50%" />
             </a>
+            </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
             </button>
             <div className="collapse navbar-collapse" id="navbars-rs-food">
                 <ul className="navbar-nav ml-auto">
-                <li className="nav-item active"><a className="nav-link" href="index.html">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href="menu.html">Menu</a></li>
-                <li className="nav-item"><a className="nav-link" href="about.html">About</a></li>
+                <li className="nav-item"><Link href="/"><a className="nav-link" href="index.html">Home</a></Link></li>
+                <li className="nav-item"><Link href="/menu"><a className="nav-link">Menu</a></Link></li>
+                <li className="nav-item"><Link href="/about"><a className="nav-link">About</a></Link></li>
                 
-                <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blogs</a>
-                    <div className="dropdown-menu" aria-labelledby="dropdown-a">
-                    <a className="dropdown-item" href="reservation.html">Timeline</a>
-                    <a className="dropdown-item" href="stuff.html">Write</a>
-                    </div>
-                </li>
+                <li className="nav-item"><Link href='/timeline'><a className="nav-link">Timeline</a></Link></li>
+                {/* <li><Link href="/blog"><a className="dropdown-item">Blog Details</a></Link></li> */}
                 <li className="nav-item"><a className="nav-link" onClick={handleLogout}>Log Out</a></li>
-                <li className="nav-item"><Link href="/"><a className="nav-link"><i className="fa fa-fw fa-cart-arrow-down" style={{color:"var(--feastasec)"}}></i></a></Link></li>
+                <li className="nav-item"><Link href="/cart"><a className="nav-link"><i className="fa fa-fw fa-cart-arrow-down" style={{color:"var(--feastasec)"}}></i></a></Link></li>
                 </ul>
             </div>
             </div>
@@ -112,7 +109,8 @@ export default function Layout({ children }) {
         </div>
     </footer>
     {/* End Footer */}
-    <a href="#" id="back-to-top" title="Back to top" style={{display: 'none'}}><i className="fa fa-paper-plane-o" aria-hidden="true" /></a>
+    
+    <a href="#" id="back-to-top" title="Back to top" ><i className="fa fa-1x fa-paper-plane-o" aria-hidden="true" /></a>
     </div>
 
     </>

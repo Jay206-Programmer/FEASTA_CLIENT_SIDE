@@ -1,11 +1,14 @@
 import Layout from '../component/Layout'
 
 import Head from 'next/head'
-import Image from 'next/image'
+import router, { useRouter } from 'next/router'
+// import Image from 'next/image'
 
 import { useState,useEffect } from 'react'
 
 export default function Home() {
+
+  const router = useRouter()
 
   // ? Defining Variables
   const [user, setuser] = useState("")
@@ -13,6 +16,8 @@ export default function Home() {
   // ? Setting Up Variables
   useEffect(() => {
       setuser(localStorage.getItem("user_name")?JSON.parse(localStorage.getItem("user_name")).user_name:"")
+      
+      router.prefetch('/menu')
   }, [])
   
   return (
